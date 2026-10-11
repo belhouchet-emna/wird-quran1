@@ -1,0 +1,192 @@
+
+.wird-adhkar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  color: var(--text-color, #24352f);
+  box-sizing: border-box;
+}
+
+.adhkar-header {
+  padding: 28px 18px;
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #e6f3e9, #f7f3e5);
+  color: #20543e;
+}
+
+.adhkar-moon {
+  font-size: 38px;
+  line-height: 1.3;
+}
+
+.adhkar-header h2 {
+  margin: 8px 0;
+  font-size: clamp(24px, 4vw, 32px);
+}
+
+.adhkar-header p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.adhkar-category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.adhkar-category {
+  padding: 11px 16px;
+  border: 1px solid #d5e3d9;
+  border-radius: 999px;
+  background: #fff;
+  color: #285640;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.adhkar-category:hover,
+.adhkar-category.active {
+  background: #286247;
+  color: #fff;
+  border-color: #286247;
+}
+
+.adhkar-progress {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #e2eae4;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.adhkar-progress-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.adhkar-progress-track {
+  height: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7eee8;
+}
+
+.adhkar-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #39815b;
+  transition: width 0.2s ease;
+}
+
+.adhkar-list {
+  display: grid;
+  gap: 14px;
+}
+
+.dhikr-card {
+  padding: 20px;
+  border: 1px solid #e1e9e3;
+  border-radius: 18px;
+  background: var(--card-background, #fff);
+  box-shadow: 0 4px 16px rgb(25 65 43 / 5%);
+}
+
+.dhikr-card.completed {
+  border-color: #8fbea0;
+  background: #f4fbf5;
+}
+
+.dhikr-text {
+  margin: 0;
+  font-family: "Amiri", "Traditional Arabic", serif;
+  font-size: clamp(23px, 4vw, 30px);
+  line-height: 2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.dhikr-note {
+  margin: 12px 0;
+  color: #6c7b70;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dhikr-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e8eee9;
+}
+
+.dhikr-count-button {
+  min-height: 42px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #286247;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.dhikr-count-button:disabled {
+  background: #d9ebdd;
+  color: #245b3b;
+  cursor: default;
+}
+
+.adhkar-reset {
+  display: block;
+  margin: 20px auto;
+  padding: 11px 16px;
+  border: 1px solid #cbd8ce;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.adhkar-friday {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #f8f0d8;
+  color: #664e1d;
+  line-height: 1.8;
+}
+
+.adhkar-friday p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 520px) {
+  .wird-adhkar {
+    padding: 16px 10px;
+  }
+
+  .dhikr-card {
+    padding: 16px;
+  }
+
+  .dhikr-card-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dhikr-count-button {
+    width: 100%;
+  }
+}

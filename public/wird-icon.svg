@@ -1,0 +1,7 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="110" fill="#0f766e"/>
+  <circle cx="256" cy="256" r="155" fill="none" stroke="#ffffff" stroke-width="12" opacity="0.65"/>
+  <text x="256" y="285" text-anchor="middle" font-size="170" fill="#ffffff" font-family="serif">و</text>
+  <path d="M180 345 Q256 390 332 345" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+</svg>
